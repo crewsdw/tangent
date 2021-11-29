@@ -21,10 +21,10 @@ class Traceable(object):
 
 def trace_grad(fn, args):
   """Trace a function, and return a VJP and the function's output."""
-  from tensorflow.python.eager.backprop import make_vjp
-  result, vjp = make_vjp(fn)(*args)
-  return result, vjp
-
+  # from tensorflow.python.eager.backprop import make_vjp
+  # result, vjp = make_vjp(fn)(*args)
+  # return result, vjp
+    return None
 
 def trace(fn):
   """Decorator that marks a function to be traced."""
