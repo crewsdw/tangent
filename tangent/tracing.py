@@ -24,7 +24,7 @@ def trace_grad(fn, args):
   # from tensorflow.python.eager.backprop import make_vjp
   # result, vjp = make_vjp(fn)(*args)
   # return result, vjp
-    return None
+  return None
 
 def trace(fn):
   """Decorator that marks a function to be traced."""
